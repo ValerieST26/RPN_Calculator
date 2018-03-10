@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">RPN_Calculator</string>
+    <string name="myOpDivide">÷</string>
+    <string name="_Numb1">1</string>
+    <string name="_Numb2">2</string>
+    <string name="_Numb3">3</string>
+    <string name="_Numb4">4</string>
+    <string name="_Numb5">5</string>
+    <string name="_Numb6">6</string>
+    <string name="_Numb7">7</string>
+    <string name="_Numb8">8</string>
+    <string name="_Numb9">9</string>
+    <string name="_Numb0">0</string>
+    <string name="myResult">=</string>
+    <string name="myOpAdd">+</string>
+    <string name="myOpSub">-</string>
+    <string name="myOpTimes">x</string>
+    <string name="myClearButtom">C</string>
+    <string name="last"> </string>
+    <string name="myyInput">Enter</string>
+    <string name="texto_inicial">text</string>
+    <string name="last_operations">Last Operations</string>
+</resources>
