@@ -52,16 +52,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String digit = ((Button)button).getText().toString();
         switch (digit) {
             case "Enter":
-                vinput.setText(vinput.getText().toString() + " ");
-                Log.d("MainActivity", "Enter Click");
+                if ((vinput.getText().toString()).isEmpty()){
+                    Log.d("MainActivity","Empty String");
+                }
+                else{
+                    vinput.setText(vinput.getText().toString() + " ");
+                    Log.d("MainActivity", "Enter Click");
+                }
                 //Toast.makeText(this, "Explota", Toast.LENGTH_LONG).show();
                 break;
             case "=":
                 //Toast.makeText(this, "Explota", Toast.LENGTH_LONG).show();
-                stack.operationsStack(digit);
                 Log.d("MainActivity", "Equal Click");
-                vinput.setText(stack.operationsStack(vinput.getText().toString()));
-                stack.addToHistory(vinput.getText().toString());
+                if ((vinput.getText().toString()).equals(" ") ||
+                        (vinput.getText().toString().isEmpty())){
+                    Log.d("MainActivity","Empty String");
+                }else {
+                    stack.operationsStack(digit);
+                    vinput.setText(stack.operationsStack(vinput.getText().toString()));
+                    stack.addToHistory(vinput.getText().toString());
+                }
                 break;
             case "C":
                 Log.d("MainActivity", "Clear Click");
